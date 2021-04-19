@@ -1,6 +1,6 @@
 COUNTRY = "India"
 # todo заменить на относительный путь
-PATH_TO_LINKS_JOURNALS = fr'C:\Users\misss\Desktop\brics-project\brics-server\project\data_csv\links-journals-{COUNTRY}.csv'
+PATH_TO_LINKS_JOURNALS = fr'C:\Users\misss\Desktop\brics-project\brics_server\project\data_csv\links-journals-{COUNTRY}.csv'
 # PATH_TO_JOURNALS_FUNCTIONS = f'../data_csv/journals-functions.csv'
 PATH_TO_GECKODRIVER = r'../driver/geckodriver.exe'
 PATH_TO_CHROMEDRIVER = r'../driver/chromedriver.exe'

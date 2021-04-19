@@ -15,7 +15,7 @@ class Parser:
 
     def __init__(self):
         # todo заменить на относительный путь
-        self.driver = webdriver.Firefox(executable_path=r'C:\Users\misss\Desktop\brics-project\brics-server\polls\driver\geckodriver.exe')
+        self.driver = webdriver.Firefox(executable_path=r'C:\Users\misss\Desktop\brics-project\brics_server\polls\driver\geckodriver.exe')
         self.current_parsing_function = ''
 
     def __new__(cls):
@@ -172,7 +172,7 @@ class Parser:
                 my_file.close()
 
     def get_top_unis_names(self, country):
-        new_driver = webdriver.Firefox(executable_path=r'C:\Users\misss\Desktop\brics-project\brics-server\polls\driver\geckodriver.exe')
+        new_driver = webdriver.Firefox(executable_path=r'C:\Users\misss\Desktop\brics-project\brics_server\polls\driver\geckodriver.exe')
         link = "https://www.natureindex.com/country-outputs/" + country
         new_driver.get(link)
         table = new_driver.find_element_by_css_selector('.table.table-condensed.rank-table')
