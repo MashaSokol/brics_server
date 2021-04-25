@@ -2,84 +2,6 @@ http://dx.doi.org/10.1074/jbc.ra119.010779: Message:
 
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abc0e7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1016/j.watres.2020.116181: 'Campus for Research Excellence and Technological Enterprise (CREATE), Singapore'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abc0e7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
@@ -113,247 +35,58 @@ http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute '
 http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
 
+http://dx.doi.org/10.1074/jbc.ra119.010779: Message: Browsing context has been discarded
+
+http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
+
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
+
+http://dx.doi.org/10.1105/tpc.19.00677: Message: The element reference of <div class="al-authors-list"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+
 http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abc0e7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abc0e7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: Failed to decode response from marionette
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abc0e7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00455: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00631: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1105/tpc.19.00631: 'NoneType' object has no attribute 'find_elements_by_css_selector'
 http://dx.doi.org/10.1105/tpc.19.00677: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
+http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
 
 http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
 
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abbee4: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
@@ -384,165 +117,267 @@ http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute '
 http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.ajhg.2020.09.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.002: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.09.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.07.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.05.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.ajhg.2020.09.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.002: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.09.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.07.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.05.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.ajhg.2020.09.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.002: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.09.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.07.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.05.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.06.004: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.05.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.04.011: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.03.013: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.04.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.03.008: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.01.008: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2019.12.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.ajhg.2020.09.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.10.002: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.09.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.07.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.05.010: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.06.004: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.05.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.04.011: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.03.013: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.04.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.03.008: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2020.01.008: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ajhg.2019.12.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.10.004: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.09.015: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.08.014: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.08.003: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.08.002: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.08.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.05.022: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.05.019: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.05.005: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.04.017: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.02.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.02.005: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.02.003: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2020.01.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2019.12.001: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.ccell.2019.12.006: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1158/0008-5472.can-20-0002: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
 
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: Failed to decode response from marionette
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: Failed to decode response from marionette
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1105/tpc.19.00677: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00455: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1105/tpc.19.00631: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa125: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa148: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa152: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa114: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa151: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa101: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa108: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa082: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slaa002: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.1093/mnrasl/slz187: 'FirefoxWebElement' object has no attribute 'strip'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.1093/mnrasl/slz187: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.gca.2020.01.028: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
 http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: Failed to decode response from marionette
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: Tried to run command without establishing a connection
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
-http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
-
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
-
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
 
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
@@ -572,20 +407,62 @@ http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute '
 http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1021/acs.orglett.0c03002: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1130/g47295.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1130/g47467.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1130/g47172.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1130/g47086.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1130/g46754.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1130/g46968.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1130/g46617.1: name 'COUNTRY' is not defined
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.3847/2041-8213/abc550: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.1074/jbc.ra119.010779: Message: 
 
 http://dx.doi.org/10.1074/jbc.ra119.011342: Message: 
 
-http://dx.doi.org/10.3847/2041-8213/abbc06: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc02: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abbc0d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abba80: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb93f: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb4e1: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abae69: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/abb13d: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/abacb7: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/aba42d: 'NoneType' object has no attribute 'text'
@@ -593,16 +470,119 @@ http://dx.doi.org/10.3847/2041-8213/ab6a18: 'NoneType' object has no attribute '
 http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab961d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8817: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab8cc7: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.1105/tpc.20.00241: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.20.00297: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.19.00609: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.1105/tpc.20.00241: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.20.00297: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.19.00609: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa106: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa057: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa028: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slz181: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.3847/2041-8213/abc550: 'Parser' object has no attribute 'get_first_nums'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab79a4: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
 http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab745d: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6ddc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab6a9c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab665c: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab66bc: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab629e: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5dc5: 'NoneType' object has no attribute 'text'
-http://dx.doi.org/10.3847/2041-8213/ab5ba1: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.cell.2020.08.009: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.cell.2020.05.034: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.cell.2020.03.021: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.1105/tpc.20.00241: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.20.00297: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.19.00609: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa106: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa057: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa028: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.1105/tpc.20.00241: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.20.00297: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1105/tpc.19.00609: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa106: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa057: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slaa028: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.1093/mnrasl/slz181: 'FirefoxWebElement' object has no attribute 'strip'
+http://dx.doi.org/10.3847/2041-8213/abc550: 'Parser' object has no attribute 'get_first_nums'
+http://dx.doi.org/10.3847/2041-8213/abc01d: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb655: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abb248: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/abaeff: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba493: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/aba618: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab960f: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab9538: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab8735: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab901b: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab88de: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab784a: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7dba: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab75f5: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7998: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab7348: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab71fd: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6443: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.3847/2041-8213/ab6d64: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.cell.2020.08.009: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.cell.2020.03.021: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1111/ele.13619: 'NoneType' object has no attribute 'text'
+
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.339796.120 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.339804.120 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.340133.120 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.333435.119 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.331157.119 is
+ http://dx.doi.org/10.1074/jbc.ra119.011853: Message: 
+
+http://dx.doi.org/10.1126/science.abd2161: list index out of range
+http://dx.doi.org/10.1126/science.aay6690: list index out of range
+http://dx.doi.org/10.1016/j.ajhg.2020.10.017: list index out of range
+http://dx.doi.org/10.1016/j.cell.2020.08.009: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1016/j.cell.2020.03.021: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1111/ele.13619: 'NoneType' object has no attribute 'text'
+
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.339796.120 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.339804.120 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.340133.120 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.333435.119 is
+ 
+ we do not know what journal of https://www.natureindex.com/article/10.1101/gad.331157.119 is
+ http://dx.doi.org/10.1074/jbc.ra119.011853: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.011751: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.011936: Message: 
+
+http://dx.doi.org/10.1074/jbc.ra119.010998: Message: 
+
+http://dx.doi.org/10.1083/jcb.201907092: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1084/jem.20190832: 'NoneType' object has no attribute 'text'
+http://dx.doi.org/10.1084/jem.20190550: 'NoneType' object has no attribute 'text'
