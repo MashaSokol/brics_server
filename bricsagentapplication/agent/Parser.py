@@ -9,10 +9,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.common.exceptions import ElementClickInterceptedException, TimeoutException, NoSuchElementException
 from selenium.webdriver.firefox.options import Options
 
-from bricsagentapplication.ArticleInformation import ArticleInformation
+from bricsagentapplication.model.ArticleInformation import ArticleInformation
 from Project.resources.consts import JOURNALS_FUNCTIONS, CSS, XPATH, ID, NAME
-from Project.resources.text_functions import delete_first_nums, get_first_nums
-from webdriver_manager.firefox import GeckoDriverManager
+from Project.classes.text_functions import delete_first_nums, get_first_nums
+# from webdriver_manager.firefox import GeckoDriverManager
 
 
 
@@ -20,11 +20,10 @@ class Parser:
 
     def __init__(self):
         # todo заменить на относительный путь
-        opts = Options()
-        opts.set_headless()
-        assert opts.headless  # без графического интерфейса
-        self.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
-
+        # opts = Options()
+        # opts.headless = True
+        # self.driver = webdriver.Firefox(options=opts, executable_path=GeckoDriverManager().install())
+        self.driver = None
         self.current_parsing_function = ''
 
     def __new__(cls):
@@ -161,16 +160,17 @@ class Parser:
                 #     my_file.write(", reason: BROWSER CHECKING\n")
                 my_file.close()
 
-    def get_top_unis_names(self, country):
+    def get_top_unis_names(self, country, additional_driver):
         # new_driver = webdriver.Firefox(executable_path=r'/bricsagentapplication/driver/geckodriver.exe')
-        new_driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
+        # opts = Options()
+        # opts.headless = True
+        # new_driver = webdriver.Firefox(options=opts, executable_path=GeckoDriverManager().install())
         link = "https://www.natureindex.com/country-outputs/" + country
-        new_driver.get(link)
-        table = new_driver.find_element_by_css_selector('.table.table-condensed.rank-table')
+        additional_driver.get(link)
+        table = additional_driver.find_element_by_css_selector('.table.table-condensed.rank-table')
         unis = table.find_elements_by_css_selector('.institution-profile')
         names = [u.text for u in unis]
-        new_driver.close()
-        return [{'name': name} for name in names]
+        return names
 
     # функции для каждого журнала
 

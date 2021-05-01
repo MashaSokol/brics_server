@@ -1,6 +1,6 @@
 from .Repo import Repo
-from bricsagentapplication.cache import Cache
-from bricsagentapplication.models import Keyword, University, Author, Article
+from bricsagentapplication.cache.Cache import Cache
+from bricsagentapplication.model.models import Keyword, University, Author, Article
 
 
 class Service:
@@ -36,37 +36,6 @@ class Service:
                         author.universities.add(university)
                         article.authors.add(author)
 
-    def get_top_unis_names(self, country):
-        return self.repo.get_country_unis_top(country)
-
-    def get_top_keywords_names(self, country):
-        return self.repo.get_country_keywords_top(country)
-
-    def get_limit_organizations(self, country, page):
-        unis = self.repo.get_limit_organizations(country)
-        if len(unis[page*10:]) >= 10:
-            return unis[page*10:page*10+10]
-        else:
-            return unis[page*10:]
-
-    def get_statistic_period(self):
-        if self.cache.is_statistic_period_empty():
-            min_date = self.repo.get_min_pub_date()
-            max_date = self.repo.get_max_pub_date()
-            period = {'min_date': min_date, 'max_date': max_date}
-            self.cache.cache_statistic_period(period)
-        else:
-            period = self.cache.get_statistic_period()
-        return period
-
-    def search_unis_by_name(self, search_text, count_from, count_to, country, page):
-        unis = self.repo.search_unis_by_name(search_text, count_from, count_to,  country)
-        if len(unis[page*10:]) >= 10:
-            return unis[page*10:page*10+10]
-        else:
-            return unis[page*10:]
-
-
     def build_article(self, article_info):
         article = Article()
         article.name = article_info.name
@@ -89,3 +58,52 @@ class Service:
     def build_author(self, a):
         author = Author(name=a)
         return author
+
+    # ----------------------- organizations
+
+    def get_country_unis_top(self, country):
+        return self.repo.get_country_unis_top(country)
+
+    def get_all_unis_top(self):
+        return self.repo.get_unis_top()
+
+    def get_limit_organizations(self, country, page):
+        unis = self.repo.get_limit_organizations(country)
+        if len(unis[page*10:]) >= 10:
+            return unis[page*10:page*10+10]
+        else:
+            return unis[page*10:]
+
+    def search_unis_by_name(self, search_text, count_from, count_to, country, page):
+        unis = self.repo.search_unis_by_name(search_text, count_from, count_to,  country)
+        if len(unis[page*10:]) >= 10:
+            return unis[page*10:page*10+10]
+        else:
+            return unis[page*10:]
+
+    # ----------------------- keywords
+
+    def get_country_top_keywords_names(self, country):
+        return self.repo.get_country_keywords_top(country)
+
+    def get_all_keywords_top(self):
+        return self.repo.get_keywords_top()
+
+    # ----------------------- authors
+
+    def get_organization_authors_top(self, organization_id):
+        return self.repo.get_organization_authors_top(organization_id)
+
+    # ----------------------- statistic
+
+    def get_statistic_period(self):
+        if self.cache.is_statistic_period_empty():
+            min_date = self.repo.get_min_pub_date()
+            max_date = self.repo.get_max_pub_date()
+            period = {'min_date': min_date, 'max_date': max_date}
+            self.cache.cache_statistic_period(period)
+        else:
+            period = self.cache.get_statistic_period()
+        return period
+
+

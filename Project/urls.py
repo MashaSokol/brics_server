@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('bricsagentapplication/', include('bricsagentapplication.urls')),
+    path('bricsagentapplication/', include('bricsagentapplication.controller.urls')),
     path('admin/', admin.site.urls),
     path('authentication/', include('AuthenticationApplication.urls'))
 ]

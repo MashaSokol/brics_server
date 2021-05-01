@@ -1,8 +1,11 @@
 from Project.classes.CsvWriter import CSVWriter
 from .Parser import Parser
-from bricsagentapplication.models import Article
+from bricsagentapplication.model.models import Article, University
 from .Service import Service
-from bricsagentapplication.cache import Cache
+from bricsagentapplication.cache.Cache import Cache
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium import webdriver
+from selenium.webdriver.firefox.options import Options
 
 
 class Agent:
@@ -11,6 +14,7 @@ class Agent:
         self.cache = Cache()
         self.csv_writer = CSVWriter()
         self.parser = Parser()
+        self.in_progress = False
         self.links_count = 0
         self.current_link_number = 0
         self.current_country = ""
@@ -21,17 +25,24 @@ class Agent:
             cls.instance = super(Agent, cls).__new__(cls)
         return cls.instance
 
+    def create_driver(self):
+        opts = Options()
+        opts.headless = True
+        return webdriver.Firefox(options=opts, executable_path=GeckoDriverManager().install())
+
     def fill_db_for_country(self, country):
-        # self.links_count = 0
+        self.in_progress = True
         self.current_link_number = 0
         self.current_country = country
 
         # links, links_journals = self.parser.get_btns_links_and_journals(coutry)
         # self.csv_writer.write_links_journals_functions_files(links, links_journals)
-        print("*********************** START PARSING FOR " + country)
 
         links_journals = self.csv_writer.read_links_journals_file(country)
         self.links_count = len(links_journals)
+
+        driver = self.create_driver()
+        self.parser.driver = driver
         for link_to_button in links_journals:
             self.current_link_number += 1
             print(country + ", link: ", link_to_button)
@@ -45,11 +56,13 @@ class Agent:
                         self.service.save_article_info(article_info)
                 except KeyError:
                     my_file = open("exceptions.txt", "a")
-                    my_file.write('\n we do not know what journal of ' + link_to_button + " is\n ")
+                    my_file.write('\n we do not know journal of ' + link_to_button + " is\n ")
                     my_file.close()
                     continue
 
         print("Done")
+        self.in_progress = False
+        driver.quit()
         # для тестирования: выбираем журнал
 
         # ! springer
@@ -130,32 +143,25 @@ class Agent:
 
         # self.update_cache(self.parser)
 
+    # def get_top_unis_names(self, country):
+    #     additional_driver = self.create_driver()
+    #     topOrganizationsNames = self.parser.get_top_unis_names(country, additional_driver)
+    #     additional_driver.quit()
+    #
+    #     organizationsTop = []
+    #
+    #     for org in topOrganizationsNames:
+    #         organizationsTop.append({'id': University.objects.get(name=org).id, 'name': org})
+    #     return organizationsTop
+
     def get_filling_progress(self):
         if self.links_count != 0:
-            return {"country": self.current_country, "progress": self.current_link_number/self.links_count*100}
+            progress = self.current_link_number/self.links_count*100
         else:
-            return {"country": self.current_country, "progress": 0}
+            progress = 0
+        return {"country": self.current_country, "progress": progress, "in_progress": self.in_progress}
 
     def update_cache(self, parser):
         # todo заменить
         for country in ['Brazil', 'Russia', 'India', 'China', 'South Africa']:
-            self.cache.cache_unis_top(parser.get_top_unis_names(country), country)
-
-    def country_unis_top(self, country):
-        if self.cache.is_unis_empty(country):
-            # с сайта, нужно парсить - долго
-            unis = self.parser.get_top_unis_names(country)
-            # из БД согласно данным в ней, тоже долго:
-            # unis = self.service.get_top_unis_names(country)
-            self.cache.cache_unis_top(unis, country)
-        return self.cache.get_unis_top(country)
-
-    def country_keywords_top(self, country):
-        if self.cache.is_keywords_empty(country):
-            # из БД согласно данным в ней:
-            kwds = self.service.get_top_keywords_names(country)
-            self.cache.cache_keywords_top(kwds, country)
-        return self.cache.get_keywords_top(country)
-
-    def get_limit_organizations(self, country, page):
-        return self.service.get_limit_organizations(country, page)
+            self.cache.cache_countries_unis_top(parser.get_country_top_unis_names(country), country)
