@@ -1,12 +1,12 @@
+from Project.resources.consts import ALL_COUNTRIES
 from .Repo import Repo
-from bricsagentapplication.cache.Cache import Cache
+
 from bricsagentapplication.model.models import Keyword, University, Author, Article
 
 
 class Service:
     def __init__(self):
         self.repo = Repo()
-        self.cache = Cache()
 
     def __new__(cls):
         if not hasattr(cls, 'instance'):
@@ -97,13 +97,17 @@ class Service:
     # ----------------------- statistic
 
     def get_statistic_period(self):
-        if self.cache.is_statistic_period_empty():
-            min_date = self.repo.get_min_pub_date()
-            max_date = self.repo.get_max_pub_date()
-            period = {'min_date': min_date, 'max_date': max_date}
-            self.cache.cache_statistic_period(period)
-        else:
-            period = self.cache.get_statistic_period()
-        return period
+        min_date = self.repo.get_min_pub_date()
+        max_date = self.repo.get_max_pub_date()
+        return {'min_date': min_date, 'max_date': max_date}
+
+    def get_pub_activity(self):
+        activity = []
+        for country in ALL_COUNTRIES:
+            count = self.repo.get_country_activity(country)
+            contribution = self.repo.get_coutry_contribution(country)
+            activity.append({'country': country, 'count': count, 'contribution':  contribution})
+        return activity
+
 
 

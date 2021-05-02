@@ -19,6 +19,7 @@ service = Service()
 cache = Cache()
 
 
+#  -----------------------------------------------------------  parsing
 @csrf_exempt
 @require_http_methods(["POST"])
 def index(request):
@@ -41,20 +42,32 @@ def filling_progress(request):
     return JsonResponse(agent.get_filling_progress(), safe=False)
 
 
+#  ----------------------------------------------------------- organizations
+
+
 @csrf_exempt
 @require_http_methods(["POST"])
-def get_all_articles(request):
-    min = json.loads(request.body)['min']
-    max = json.loads(request.body)['max']
-    articles = Article.objects.all()[min:max+1]
-    return JsonResponse(json.loads(serializers.serialize('json', articles)), safe=False)
+def get_country_top_organizations(request):
+    country = json.loads(request.body)['country']
+    if cache.is_unis_empty(country):
+        # unis = agent.get_top_unis_names(country)  # с сайта, нужно парсить - долго
+        unis = service.get_country_unis_top(country)  # из БД согласно данным в ней
+        cache.cache_countries_unis_top(unis, country)
+    return JsonResponse(cache.get_unis_top(country), safe=False)
 
 
 @csrf_exempt
 @require_http_methods(["GET"])
-def get_statistic_period(request):
-    period = service.get_statistic_period()
-    return JsonResponse(period, safe=False)
+def get_all_top_organizations(request):
+    return JsonResponse(service.get_all_unis_top(), safe=False)
+
+
+@csrf_exempt
+@require_http_methods(["POST"])
+def get_limit_organizations(request):
+    country = json.loads(request.body)['country']
+    page = json.loads(request.body)['page'] - 1
+    return JsonResponse(service.get_limit_organizations(country, page), safe=False)
 
 
 @csrf_exempt
@@ -68,34 +81,7 @@ def search_organizations(request):
     unis = service.search_unis_by_name(search_text, count_from, count_to, country, page)
     return JsonResponse(unis, safe=False)
 
-
-@csrf_exempt
-@require_http_methods(["GET"])
-def get_pub_activity(request):
-    all = []
-    activity = {}
-    for country in ALL_COUNTRIES:
-        count = len(Article.objects.filter(country=country))
-        activity[country] = count
-        all.append({'country': country, 'count': count})
-    return JsonResponse(all, safe=False)
-
-
-@csrf_exempt
-@require_http_methods(["POST"])
-def get_country_top_organizations(request):
-    country = json.loads(request.body)['country']
-    if cache.is_unis_empty(country):
-        # unis = agent.get_top_unis_names(country)  # с сайта, нужно парсить - долго
-        unis = service.get_country_unis_top(country)  # из БД согласно данным в ней, тоже долго
-        cache.cache_countries_unis_top(unis, country)
-    return JsonResponse(cache.get_unis_top(country), safe=False)
-
-
-@csrf_exempt
-@require_http_methods(["GET"])
-def get_all_top_organizations(request):
-    return JsonResponse(service.get_all_unis_top(), safe=False)
+#  ----------------------------------------------------------- keywords
 
 
 @csrf_exempt
@@ -113,6 +99,8 @@ def get_country_top_keywords(request):
 def get_all_top_keywords(request):
     return JsonResponse(service.get_all_keywords_top(), safe=False)
 
+#  ----------------------------------------------------------- authors
+
 
 @csrf_exempt
 @require_http_methods(["POST"])
@@ -120,10 +108,37 @@ def get_organization_authors_top(request):
     organization_id = json.loads(request.body)['organization_id']
     return JsonResponse(service.get_organization_authors_top(organization_id), safe=False)
 
+#  ----------------------------------------------------------- activity
+
+
+@csrf_exempt
+@require_http_methods(["GET"])
+def get_statistic_period(request):
+    if cache.is_statistic_period_empty():
+        period = service.get_statistic_period()
+        cache.cache_statistic_period(period)
+    period = cache.get_statistic_period()
+    return JsonResponse(period, safe=False)
+
+
+@csrf_exempt
+@require_http_methods(["GET"])
+def get_pub_activity(request):
+    if cache.is_pub_activity_empty():
+        activity = service.get_pub_activity()
+        cache.cache_pub_activity(activity)
+    activity = cache.get_pub_activity()
+    return JsonResponse(activity, safe=False)
+
+#  ----------------------------------------------------------- articles
+
 
 @csrf_exempt
 @require_http_methods(["POST"])
-def get_limit_organizations(request):
-    country = json.loads(request.body)['country']
-    page = json.loads(request.body)['page'] - 1
-    return JsonResponse(service.get_limit_organizations(country, page), safe=False)
+def get_all_articles(request):
+    min = json.loads(request.body)['min']
+    max = json.loads(request.body)['max']
+    articles = Article.objects.all()[min:max+1]
+    return JsonResponse(json.loads(serializers.serialize('json', articles)), safe=False)
+
+

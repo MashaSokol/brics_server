@@ -4,6 +4,7 @@ class Cache:
         self.top_countries_universities = {}
         self.top_keywords = {}
         self.statistic_period = {}
+        self.pub_activity = []
 
     def __new__(cls):
         if not hasattr(cls, 'instance'):
@@ -53,3 +54,16 @@ class Cache:
 
     def get_statistic_period(self):
         return self.statistic_period
+
+    # ----------------------- activity
+
+    def cache_pub_activity(self, activity):
+        self.pub_activity = []
+        for a in activity:
+            self.pub_activity.append(({'country': a['country'], 'count': a['count'], 'contribution':  a['contribution']}))
+
+    def is_pub_activity_empty(self):
+        return len(self.pub_activity) == 0
+
+    def get_pub_activity(self):
+        return self.pub_activity

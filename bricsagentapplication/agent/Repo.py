@@ -88,6 +88,27 @@ class Repo:
     def get_max_pub_date(self):
         return Article.objects.order_by('-publication_date')[0].publication_date
 
+    def get_country_activity(self, country):
+        return len(Article.objects.filter(country__iexact=country))
+
+    def get_coutry_contribution(self, country):
+        articles = Article.objects.filter(country__icontains=country)
+        if len(articles) < 1:
+            return None
+        contribution = 0
+        articles_count = 0
+        for a in articles:
+            orgs_count = len(a.universities.all())
+            if orgs_count > 0:
+                articles_count += 1
+                if country.lower() == 'russia':
+                    country_article_orgs_count = len(a.universities.all().filter(name__icontains=country))
+                else:
+                    country_article_orgs_count = len(a.universities.all().filter(name__iendswith=country))
+                contribution += country_article_orgs_count*100/orgs_count
+        return contribution/articles_count
+
+
     # ----------------------- unis
 
     def search_unis_by_name(self, search_text, count_from, count_to, country):
