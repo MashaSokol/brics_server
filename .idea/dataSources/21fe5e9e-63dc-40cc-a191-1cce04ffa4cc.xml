@@ -824,7 +824,7 @@ true posixrules
 13018||-9223372036854775808|U|G
 13018||10|U|G</Grants>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2699099</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3068230</IntrospectionStateNumber>
       <Current>1</Current>
       <Relations>sequence|table|61398|61400|1
 sequence|table|61409|61411|1
@@ -916,7 +916,7 @@ sequence|table|61627|61629|1
       <Comment>standard public schema</Comment>
       <StateNumber>276</StateNumber>
       <Owner>postgres</Owner>
-      <IntrospectionStateNumber>2699100</IntrospectionStateNumber>
+      <IntrospectionStateNumber>3068231</IntrospectionStateNumber>
       <Current>1</Current>
     </schema>
     <extension id="23" parent="6" name="plpgsql">
@@ -1148,45 +1148,45 @@ sequence|table|61627|61629|1
       <Owner>postgres</Owner>
       <StateNumber>1897728</StateNumber>
     </table>
-    <table id="58" parent="22" name="bricsagentapplication_article">
-      <ObjectId>61596</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>2532329</StateNumber>
-    </table>
-    <table id="59" parent="22" name="bricsagentapplication_article_authors">
-      <ObjectId>61613</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>2532330</StateNumber>
-    </table>
-    <table id="60" parent="22" name="bricsagentapplication_article_keywords">
-      <ObjectId>61621</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>2532331</StateNumber>
-    </table>
-    <table id="61" parent="22" name="bricsagentapplication_article_universities">
-      <ObjectId>61629</ObjectId>
-      <Owner>postgres</Owner>
-      <StateNumber>2532332</StateNumber>
-    </table>
-    <table id="62" parent="22" name="bricsagentapplication_author">
+    <table id="58" parent="22" name="bricsagentapplication_author">
       <ObjectId>61578</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>2532333</StateNumber>
     </table>
-    <table id="63" parent="22" name="bricsagentapplication_author_universities">
+    <table id="59" parent="22" name="bricsagentapplication_author_organizations">
       <ObjectId>61588</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>2532334</StateNumber>
+      <StateNumber>3068222</StateNumber>
     </table>
-    <table id="64" parent="22" name="bricsagentapplication_keyword">
+    <table id="60" parent="22" name="bricsagentapplication_keyword">
       <ObjectId>61558</ObjectId>
       <Owner>postgres</Owner>
       <StateNumber>2532335</StateNumber>
     </table>
-    <table id="65" parent="22" name="bricsagentapplication_university">
+    <table id="61" parent="22" name="bricsagentapplication_organization">
       <ObjectId>61568</ObjectId>
       <Owner>postgres</Owner>
-      <StateNumber>2532336</StateNumber>
+      <StateNumber>3068224</StateNumber>
+    </table>
+    <table id="62" parent="22" name="bricsagentapplication_publication">
+      <ObjectId>61596</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3068218</StateNumber>
+    </table>
+    <table id="63" parent="22" name="bricsagentapplication_publication_authors">
+      <ObjectId>61613</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3068219</StateNumber>
+    </table>
+    <table id="64" parent="22" name="bricsagentapplication_publication_keywords">
+      <ObjectId>61621</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3068220</StateNumber>
+    </table>
+    <table id="65" parent="22" name="bricsagentapplication_publication_organizations">
+      <ObjectId>61629</ObjectId>
+      <Owner>postgres</Owner>
+      <StateNumber>3068223</StateNumber>
     </table>
     <table id="66" parent="22" name="django_admin_log">
       <ObjectId>61525</ObjectId>
@@ -1764,456 +1764,17 @@ permission_id</ColNames>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1897744</StateNumber>
-      <DefaultExpression>nextval(&apos;polls_article_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="137" parent="58" name="link_to_btn">
-      <Position>2</Position>
-      <DataType>varchar(300)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="138" parent="58" name="link">
-      <Position>3</Position>
-      <DataType>varchar(300)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="139" parent="58" name="journal_name">
-      <Position>4</Position>
-      <DataType>varchar(1900)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="140" parent="58" name="name">
-      <Position>5</Position>
-      <DataType>varchar(1500)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="141" parent="58" name="abstract">
-      <Position>6</Position>
-      <DataType>varchar(4000)|0s</DataType>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="142" parent="58" name="publication_date">
-      <Position>7</Position>
-      <DataType>date|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1082</TypeId>
-    </column>
-    <column id="143" parent="58" name="country">
-      <Position>8</Position>
-      <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>1043</TypeId>
-    </column>
-    <index id="144" parent="58" name="polls_article_pkey">
-      <ObjectId>61603</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="145" parent="58" name="polls_article_link_to_btn_key">
-      <ObjectId>61605</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>link_to_btn</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>3126</ClassIds>
-    </index>
-    <index id="146" parent="58" name="polls_article_link_key">
-      <ObjectId>61607</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>link</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>3126</ClassIds>
-    </index>
-    <index id="147" parent="58" name="polls_article_name_key">
-      <ObjectId>61609</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>name</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>3126</ClassIds>
-    </index>
-    <index id="148" parent="58" name="polls_article_link_to_btn_a3edca26_like">
-      <ObjectId>61652</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>link_to_btn</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>4218</ClassIds>
-      <ClassNames>varchar_pattern_ops</ClassNames>
-    </index>
-    <index id="149" parent="58" name="polls_article_link_884f3adb_like">
-      <ObjectId>61653</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>link</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>4218</ClassIds>
-      <ClassNames>varchar_pattern_ops</ClassNames>
-    </index>
-    <index id="150" parent="58" name="polls_article_name_b59d2ec0_like">
-      <ObjectId>61654</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>name</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>100</CollationIds>
-      <CollationNames>default</CollationNames>
-      <ClassIds>4218</ClassIds>
-      <ClassNames>varchar_pattern_ops</ClassNames>
-    </index>
-    <key id="151" parent="58" name="polls_article_pkey">
-      <ObjectId>61604</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>polls_article_pkey</UnderlyingIndexName>
-    </key>
-    <key id="152" parent="58" name="polls_article_link_to_btn_key">
-      <ObjectId>61606</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>link_to_btn</ColNames>
-      <UnderlyingIndexName>polls_article_link_to_btn_key</UnderlyingIndexName>
-    </key>
-    <key id="153" parent="58" name="polls_article_link_key">
-      <ObjectId>61608</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>link</ColNames>
-      <UnderlyingIndexName>polls_article_link_key</UnderlyingIndexName>
-    </key>
-    <key id="154" parent="58" name="polls_article_name_key">
-      <ObjectId>61610</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>name</ColNames>
-      <UnderlyingIndexName>polls_article_name_key</UnderlyingIndexName>
-    </key>
-    <column id="155" parent="59" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <DefaultExpression>nextval(&apos;polls_article_authors_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="156" parent="59" name="article_id">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="157" parent="59" name="author_id">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="158" parent="59" name="polls_article_authors_pkey">
-      <ObjectId>61617</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="159" parent="59" name="polls_article_authors_article_id_author_id_02ecc128_uniq">
-      <ObjectId>61655</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id
-author_id</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0,0</CollationIds>
-      <ClassIds>1978,1978</ClassIds>
-    </index>
-    <index id="160" parent="59" name="polls_article_authors_article_id_85902f4a">
-      <ObjectId>61667</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="161" parent="59" name="polls_article_authors_author_id_ba73e48c">
-      <ObjectId>61668</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>author_id</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <key id="162" parent="59" name="polls_article_authors_pkey">
-      <ObjectId>61618</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>polls_article_authors_pkey</UnderlyingIndexName>
-    </key>
-    <key id="163" parent="59" name="polls_article_authors_article_id_author_id_02ecc128_uniq">
-      <ObjectId>61656</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id
-author_id</ColNames>
-      <UnderlyingIndexName>polls_article_authors_article_id_author_id_02ecc128_uniq</UnderlyingIndexName>
-    </key>
-    <foreign-key id="164" parent="59" name="polls_article_authors_article_id_85902f4a_fk_polls_article_id">
-      <ObjectId>61657</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableId>61596</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_article</RefTableName>
-      <RefKeyName>polls_article_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="165" parent="59" name="polls_article_authors_author_id_ba73e48c_fk_polls_author_id">
-      <ObjectId>61662</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>author_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableId>61578</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_author</RefTableName>
-      <RefKeyName>polls_author_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="166" parent="60" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <DefaultExpression>nextval(&apos;polls_article_keywords_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="167" parent="60" name="article_id">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="168" parent="60" name="keyword_id">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="169" parent="60" name="polls_article_keywords_pkey">
-      <ObjectId>61625</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="170" parent="60" name="polls_article_keywords_article_id_keyword_id_b355e090_uniq">
-      <ObjectId>61669</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id
-keyword_id</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0,0</CollationIds>
-      <ClassIds>1978,1978</ClassIds>
-    </index>
-    <index id="171" parent="60" name="polls_article_keywords_article_id_ffc26c13">
-      <ObjectId>61681</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="172" parent="60" name="polls_article_keywords_keyword_id_55f89411">
-      <ObjectId>61682</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>keyword_id</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <key id="173" parent="60" name="polls_article_keywords_pkey">
-      <ObjectId>61626</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>polls_article_keywords_pkey</UnderlyingIndexName>
-    </key>
-    <key id="174" parent="60" name="polls_article_keywords_article_id_keyword_id_b355e090_uniq">
-      <ObjectId>61670</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id
-keyword_id</ColNames>
-      <UnderlyingIndexName>polls_article_keywords_article_id_keyword_id_b355e090_uniq</UnderlyingIndexName>
-    </key>
-    <foreign-key id="175" parent="60" name="polls_article_keywords_article_id_ffc26c13_fk_polls_article_id">
-      <ObjectId>61671</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableId>61596</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_article</RefTableName>
-      <RefKeyName>polls_article_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="176" parent="60" name="polls_article_keywords_keyword_id_55f89411_fk_polls_keyword_id">
-      <ObjectId>61676</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>keyword_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableId>61558</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_keyword</RefTableName>
-      <RefKeyName>polls_keyword_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="177" parent="61" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <DefaultExpression>nextval(&apos;polls_article_universities_id_seq&apos;::regclass)</DefaultExpression>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="178" parent="61" name="article_id">
-      <Position>2</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="179" parent="61" name="university_id">
-      <Position>3</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="180" parent="61" name="polls_article_universities_pkey">
-      <ObjectId>61633</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Unique>1</Unique>
-      <Primary>1</Primary>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="181" parent="61" name="polls_article_universiti_article_id_university_id_7dab2324_uniq">
-      <ObjectId>61683</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id
-university_id</ColNames>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0,0</CollationIds>
-      <ClassIds>1978,1978</ClassIds>
-    </index>
-    <index id="182" parent="61" name="polls_article_universities_article_id_73403bbc">
-      <ObjectId>61695</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <index id="183" parent="61" name="polls_article_universities_university_id_82e33863">
-      <ObjectId>61696</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>university_id</ColNames>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationIds>0</CollationIds>
-      <ClassIds>1978</ClassIds>
-    </index>
-    <key id="184" parent="61" name="polls_article_universities_pkey">
-      <ObjectId>61634</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>polls_article_universities_pkey</UnderlyingIndexName>
-    </key>
-    <key id="185" parent="61" name="polls_article_universiti_article_id_university_id_7dab2324_uniq">
-      <ObjectId>61684</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id
-university_id</ColNames>
-      <UnderlyingIndexName>polls_article_universiti_article_id_university_id_7dab2324_uniq</UnderlyingIndexName>
-    </key>
-    <foreign-key id="186" parent="61" name="polls_article_univer_article_id_73403bbc_fk_polls_art">
-      <ObjectId>61685</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>article_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableId>61596</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_article</RefTableName>
-      <RefKeyName>polls_article_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <foreign-key id="187" parent="61" name="polls_article_univer_university_id_82e33863_fk_polls_uni">
-      <ObjectId>61690</ObjectId>
-      <StateNumber>1897744</StateNumber>
-      <ColNames>university_id</ColNames>
-      <Deferrable>1</Deferrable>
-      <InitiallyDeferred>1</InitiallyDeferred>
-      <RefTableId>61568</RefTableId>
-      <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_university</RefTableName>
-      <RefKeyName>polls_university_pkey</RefKeyName>
-      <RefColNames>id</RefColNames>
-    </foreign-key>
-    <column id="188" parent="62" name="id">
-      <Position>1</Position>
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
       <DefaultExpression>nextval(&apos;polls_author_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="189" parent="62" name="name">
+    <column id="137" parent="58" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1897744</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="190" parent="62" name="polls_author_pkey">
+    <index id="138" parent="58" name="polls_author_pkey">
       <ObjectId>61582</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
@@ -2223,7 +1784,7 @@ university_id</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="191" parent="62" name="polls_author_name_key">
+    <index id="139" parent="58" name="polls_author_name_key">
       <ObjectId>61584</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
@@ -2233,7 +1794,7 @@ university_id</ColNames>
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <index id="192" parent="62" name="polls_author_name_634f6c21_like">
+    <index id="140" parent="58" name="polls_author_name_634f6c21_like">
       <ObjectId>61637</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
@@ -2243,20 +1804,20 @@ university_id</ColNames>
       <ClassIds>4218</ClassIds>
       <ClassNames>varchar_pattern_ops</ClassNames>
     </index>
-    <key id="193" parent="62" name="polls_author_pkey">
+    <key id="141" parent="58" name="polls_author_pkey">
       <ObjectId>61583</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>polls_author_pkey</UnderlyingIndexName>
     </key>
-    <key id="194" parent="62" name="polls_author_name_key">
+    <key id="142" parent="58" name="polls_author_name_key">
       <ObjectId>61585</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>polls_author_name_key</UnderlyingIndexName>
     </key>
-    <column id="195" parent="63" name="id">
+    <column id="143" parent="59" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -2264,21 +1825,21 @@ university_id</ColNames>
       <DefaultExpression>nextval(&apos;polls_author_universities_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="196" parent="63" name="author_id">
+    <column id="144" parent="59" name="author_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1897744</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="197" parent="63" name="university_id">
+    <column id="145" parent="59" name="organization_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>1897744</StateNumber>
+      <StateNumber>3068229</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <index id="198" parent="63" name="polls_author_universities_pkey">
+    <index id="146" parent="59" name="polls_author_universities_pkey">
       <ObjectId>61592</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
@@ -2288,17 +1849,17 @@ university_id</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="199" parent="63" name="polls_author_universities_author_id_university_id_f2be6419_uniq">
+    <index id="147" parent="59" name="polls_author_universities_author_id_university_id_f2be6419_uniq">
       <ObjectId>61638</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>author_id
-university_id</ColNames>
+organization_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
       <CollationIds>0,0</CollationIds>
       <ClassIds>1978,1978</ClassIds>
     </index>
-    <index id="200" parent="63" name="polls_author_universities_author_id_8944fea7">
+    <index id="148" parent="59" name="polls_author_universities_author_id_8944fea7">
       <ObjectId>61650</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>author_id</ColNames>
@@ -2306,29 +1867,29 @@ university_id</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="201" parent="63" name="polls_author_universities_university_id_b70ac192">
+    <index id="149" parent="59" name="polls_author_universities_university_id_b70ac192">
       <ObjectId>61651</ObjectId>
       <StateNumber>1897744</StateNumber>
-      <ColNames>university_id</ColNames>
+      <ColNames>organization_id</ColNames>
       <AccessMethodId>403</AccessMethodId>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <key id="202" parent="63" name="polls_author_universities_pkey">
+    <key id="150" parent="59" name="polls_author_universities_pkey">
       <ObjectId>61593</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>polls_author_universities_pkey</UnderlyingIndexName>
     </key>
-    <key id="203" parent="63" name="polls_author_universities_author_id_university_id_f2be6419_uniq">
+    <key id="151" parent="59" name="polls_author_universities_author_id_university_id_f2be6419_uniq">
       <ObjectId>61639</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>author_id
-university_id</ColNames>
+organization_id</ColNames>
       <UnderlyingIndexName>polls_author_universities_author_id_university_id_f2be6419_uniq</UnderlyingIndexName>
     </key>
-    <foreign-key id="204" parent="63" name="polls_author_universities_author_id_8944fea7_fk_polls_author_id">
+    <foreign-key id="152" parent="59" name="polls_author_universities_author_id_8944fea7_fk_polls_author_id">
       <ObjectId>61640</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>author_id</ColNames>
@@ -2340,19 +1901,19 @@ university_id</ColNames>
       <RefKeyName>polls_author_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <foreign-key id="205" parent="63" name="polls_author_univers_university_id_b70ac192_fk_polls_uni">
+    <foreign-key id="153" parent="59" name="polls_author_univers_university_id_b70ac192_fk_polls_uni">
       <ObjectId>61645</ObjectId>
       <StateNumber>1897744</StateNumber>
-      <ColNames>university_id</ColNames>
+      <ColNames>organization_id</ColNames>
       <Deferrable>1</Deferrable>
       <InitiallyDeferred>1</InitiallyDeferred>
       <RefTableId>61568</RefTableId>
       <RefColPositions>1</RefColPositions>
-      <RefTableName>bricsagentapplication_university</RefTableName>
+      <RefTableName>bricsagentapplication_organization</RefTableName>
       <RefKeyName>polls_university_pkey</RefKeyName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="206" parent="64" name="id">
+    <column id="154" parent="60" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -2360,14 +1921,14 @@ university_id</ColNames>
       <DefaultExpression>nextval(&apos;polls_keyword_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="207" parent="64" name="name">
+    <column id="155" parent="60" name="name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1897744</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="208" parent="64" name="polls_keyword_pkey">
+    <index id="156" parent="60" name="polls_keyword_pkey">
       <ObjectId>61562</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
@@ -2377,7 +1938,7 @@ university_id</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="209" parent="64" name="polls_keyword_name_key">
+    <index id="157" parent="60" name="polls_keyword_name_key">
       <ObjectId>61564</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
@@ -2387,7 +1948,7 @@ university_id</ColNames>
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <index id="210" parent="64" name="polls_keyword_name_d14619d4_like">
+    <index id="158" parent="60" name="polls_keyword_name_d14619d4_like">
       <ObjectId>61635</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
@@ -2397,20 +1958,20 @@ university_id</ColNames>
       <ClassIds>4218</ClassIds>
       <ClassNames>varchar_pattern_ops</ClassNames>
     </index>
-    <key id="211" parent="64" name="polls_keyword_pkey">
+    <key id="159" parent="60" name="polls_keyword_pkey">
       <ObjectId>61563</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>polls_keyword_pkey</UnderlyingIndexName>
     </key>
-    <key id="212" parent="64" name="polls_keyword_name_key">
+    <key id="160" parent="60" name="polls_keyword_name_key">
       <ObjectId>61565</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>polls_keyword_name_key</UnderlyingIndexName>
     </key>
-    <column id="213" parent="65" name="id">
+    <column id="161" parent="61" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
@@ -2418,14 +1979,14 @@ university_id</ColNames>
       <DefaultExpression>nextval(&apos;polls_university_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <column id="214" parent="65" name="name">
+    <column id="162" parent="61" name="name">
       <Position>2</Position>
       <DataType>varchar(400)|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>1897744</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="215" parent="65" name="polls_university_pkey">
+    <index id="163" parent="61" name="polls_university_pkey">
       <ObjectId>61572</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
@@ -2435,7 +1996,7 @@ university_id</ColNames>
       <CollationIds>0</CollationIds>
       <ClassIds>1978</ClassIds>
     </index>
-    <index id="216" parent="65" name="polls_university_name_key">
+    <index id="164" parent="61" name="polls_university_name_key">
       <ObjectId>61574</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
@@ -2445,7 +2006,7 @@ university_id</ColNames>
       <CollationNames>default</CollationNames>
       <ClassIds>3126</ClassIds>
     </index>
-    <index id="217" parent="65" name="polls_university_name_6a7a0883_like">
+    <index id="165" parent="61" name="polls_university_name_6a7a0883_like">
       <ObjectId>61636</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
@@ -2455,19 +2016,458 @@ university_id</ColNames>
       <ClassIds>4218</ClassIds>
       <ClassNames>varchar_pattern_ops</ClassNames>
     </index>
-    <key id="218" parent="65" name="polls_university_pkey">
+    <key id="166" parent="61" name="polls_university_pkey">
       <ObjectId>61573</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>polls_university_pkey</UnderlyingIndexName>
     </key>
-    <key id="219" parent="65" name="polls_university_name_key">
+    <key id="167" parent="61" name="polls_university_name_key">
       <ObjectId>61575</ObjectId>
       <StateNumber>1897744</StateNumber>
       <ColNames>name</ColNames>
       <UnderlyingIndexName>polls_university_name_key</UnderlyingIndexName>
     </key>
+    <column id="168" parent="62" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <DefaultExpression>nextval(&apos;polls_article_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="169" parent="62" name="link_to_btn">
+      <Position>2</Position>
+      <DataType>varchar(300)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="170" parent="62" name="link">
+      <Position>3</Position>
+      <DataType>varchar(300)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="171" parent="62" name="journal_name">
+      <Position>4</Position>
+      <DataType>varchar(1900)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="172" parent="62" name="name">
+      <Position>5</Position>
+      <DataType>varchar(1500)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="173" parent="62" name="abstract">
+      <Position>6</Position>
+      <DataType>varchar(4000)|0s</DataType>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="174" parent="62" name="date">
+      <Position>7</Position>
+      <DataType>date|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3068228</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="175" parent="62" name="country">
+      <Position>8</Position>
+      <DataType>varchar(50)|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="176" parent="62" name="polls_article_pkey">
+      <ObjectId>61603</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="177" parent="62" name="polls_article_link_to_btn_key">
+      <ObjectId>61605</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>link_to_btn</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <index id="178" parent="62" name="polls_article_link_key">
+      <ObjectId>61607</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>link</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <index id="179" parent="62" name="polls_article_name_key">
+      <ObjectId>61609</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>name</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>3126</ClassIds>
+    </index>
+    <index id="180" parent="62" name="polls_article_link_to_btn_a3edca26_like">
+      <ObjectId>61652</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>link_to_btn</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>4218</ClassIds>
+      <ClassNames>varchar_pattern_ops</ClassNames>
+    </index>
+    <index id="181" parent="62" name="polls_article_link_884f3adb_like">
+      <ObjectId>61653</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>link</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>4218</ClassIds>
+      <ClassNames>varchar_pattern_ops</ClassNames>
+    </index>
+    <index id="182" parent="62" name="polls_article_name_b59d2ec0_like">
+      <ObjectId>61654</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>name</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>100</CollationIds>
+      <CollationNames>default</CollationNames>
+      <ClassIds>4218</ClassIds>
+      <ClassNames>varchar_pattern_ops</ClassNames>
+    </index>
+    <key id="183" parent="62" name="polls_article_pkey">
+      <ObjectId>61604</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>polls_article_pkey</UnderlyingIndexName>
+    </key>
+    <key id="184" parent="62" name="polls_article_link_to_btn_key">
+      <ObjectId>61606</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>link_to_btn</ColNames>
+      <UnderlyingIndexName>polls_article_link_to_btn_key</UnderlyingIndexName>
+    </key>
+    <key id="185" parent="62" name="polls_article_link_key">
+      <ObjectId>61608</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>link</ColNames>
+      <UnderlyingIndexName>polls_article_link_key</UnderlyingIndexName>
+    </key>
+    <key id="186" parent="62" name="polls_article_name_key">
+      <ObjectId>61610</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>name</ColNames>
+      <UnderlyingIndexName>polls_article_name_key</UnderlyingIndexName>
+    </key>
+    <column id="187" parent="63" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <DefaultExpression>nextval(&apos;polls_article_authors_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="188" parent="63" name="publication_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3068227</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="189" parent="63" name="author_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="190" parent="63" name="polls_article_authors_pkey">
+      <ObjectId>61617</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="191" parent="63" name="polls_article_authors_article_id_author_id_02ecc128_uniq">
+      <ObjectId>61655</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id
+author_id</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0,0</CollationIds>
+      <ClassIds>1978,1978</ClassIds>
+    </index>
+    <index id="192" parent="63" name="polls_article_authors_article_id_85902f4a">
+      <ObjectId>61667</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="193" parent="63" name="polls_article_authors_author_id_ba73e48c">
+      <ObjectId>61668</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>author_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="194" parent="63" name="polls_article_authors_pkey">
+      <ObjectId>61618</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>polls_article_authors_pkey</UnderlyingIndexName>
+    </key>
+    <key id="195" parent="63" name="polls_article_authors_article_id_author_id_02ecc128_uniq">
+      <ObjectId>61656</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id
+author_id</ColNames>
+      <UnderlyingIndexName>polls_article_authors_article_id_author_id_02ecc128_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="196" parent="63" name="polls_article_authors_article_id_85902f4a_fk_polls_article_id">
+      <ObjectId>61657</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>61596</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bricsagentapplication_publication</RefTableName>
+      <RefKeyName>polls_article_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="197" parent="63" name="polls_article_authors_author_id_ba73e48c_fk_polls_author_id">
+      <ObjectId>61662</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>author_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>61578</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bricsagentapplication_author</RefTableName>
+      <RefKeyName>polls_author_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="198" parent="64" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <DefaultExpression>nextval(&apos;polls_article_keywords_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="199" parent="64" name="publication_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3068226</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="200" parent="64" name="keyword_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="201" parent="64" name="polls_article_keywords_pkey">
+      <ObjectId>61625</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="202" parent="64" name="polls_article_keywords_article_id_keyword_id_b355e090_uniq">
+      <ObjectId>61669</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id
+keyword_id</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0,0</CollationIds>
+      <ClassIds>1978,1978</ClassIds>
+    </index>
+    <index id="203" parent="64" name="polls_article_keywords_article_id_ffc26c13">
+      <ObjectId>61681</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="204" parent="64" name="polls_article_keywords_keyword_id_55f89411">
+      <ObjectId>61682</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>keyword_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="205" parent="64" name="polls_article_keywords_pkey">
+      <ObjectId>61626</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>polls_article_keywords_pkey</UnderlyingIndexName>
+    </key>
+    <key id="206" parent="64" name="polls_article_keywords_article_id_keyword_id_b355e090_uniq">
+      <ObjectId>61670</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id
+keyword_id</ColNames>
+      <UnderlyingIndexName>polls_article_keywords_article_id_keyword_id_b355e090_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="207" parent="64" name="polls_article_keywords_article_id_ffc26c13_fk_polls_article_id">
+      <ObjectId>61671</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>61596</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bricsagentapplication_publication</RefTableName>
+      <RefKeyName>polls_article_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="208" parent="64" name="polls_article_keywords_keyword_id_55f89411_fk_polls_keyword_id">
+      <ObjectId>61676</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>keyword_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>61558</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bricsagentapplication_keyword</RefTableName>
+      <RefKeyName>polls_keyword_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="209" parent="65" name="id">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>1897744</StateNumber>
+      <DefaultExpression>nextval(&apos;polls_article_universities_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="210" parent="65" name="publication_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3068225</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="211" parent="65" name="organization_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>3068225</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="212" parent="65" name="polls_article_universities_pkey">
+      <ObjectId>61633</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="213" parent="65" name="polls_article_universiti_article_id_university_id_7dab2324_uniq">
+      <ObjectId>61683</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id
+organization_id</ColNames>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0,0</CollationIds>
+      <ClassIds>1978,1978</ClassIds>
+    </index>
+    <index id="214" parent="65" name="polls_article_universities_article_id_73403bbc">
+      <ObjectId>61695</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <index id="215" parent="65" name="polls_article_universities_university_id_82e33863">
+      <ObjectId>61696</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>organization_id</ColNames>
+      <AccessMethodId>403</AccessMethodId>
+      <CollationIds>0</CollationIds>
+      <ClassIds>1978</ClassIds>
+    </index>
+    <key id="216" parent="65" name="polls_article_universities_pkey">
+      <ObjectId>61634</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>polls_article_universities_pkey</UnderlyingIndexName>
+    </key>
+    <key id="217" parent="65" name="polls_article_universiti_article_id_university_id_7dab2324_uniq">
+      <ObjectId>61684</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id
+organization_id</ColNames>
+      <UnderlyingIndexName>polls_article_universiti_article_id_university_id_7dab2324_uniq</UnderlyingIndexName>
+    </key>
+    <foreign-key id="218" parent="65" name="polls_article_univer_article_id_73403bbc_fk_polls_art">
+      <ObjectId>61685</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>publication_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>61596</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bricsagentapplication_publication</RefTableName>
+      <RefKeyName>polls_article_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="219" parent="65" name="polls_article_univer_university_id_82e33863_fk_polls_uni">
+      <ObjectId>61690</ObjectId>
+      <StateNumber>1897744</StateNumber>
+      <ColNames>organization_id</ColNames>
+      <Deferrable>1</Deferrable>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <RefTableId>61568</RefTableId>
+      <RefColPositions>1</RefColPositions>
+      <RefTableName>bricsagentapplication_organization</RefTableName>
+      <RefKeyName>polls_university_pkey</RefKeyName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
     <column id="220" parent="66" name="id">
       <Position>1</Position>
       <DataType>integer|0s</DataType>

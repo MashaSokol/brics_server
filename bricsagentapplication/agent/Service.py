@@ -1,7 +1,7 @@
 from Project.resources.consts import ALL_COUNTRIES
 from .Repo import Repo
 
-from bricsagentapplication.model.models import Keyword, University, Author, Article
+from bricsagentapplication.model.models import Keyword, Organization, Author, Publication
 
 
 class Service:
@@ -13,47 +13,47 @@ class Service:
             cls.instance = super(Service, cls).__new__(cls)
         return cls.instance
 
-    def save_article_info(self, article_info):
-        if article_info is not None:
-            article = self.build_article(article_info)
-            article = self.repo.save_article(article)
+    def save_publication_info(self, publication_info):
+        if publication_info is not None:
+            publication = self.build_publication(publication_info)
+            publication = self.repo.save_publication(publication)
 
-            for k in article_info.keywords:
+            for k in publication_info.keywords:
                 if len(k) > 2:
                     keyword = self.build_keyword(k.lower().strip())
                     keyword = self.repo.save_keyword(keyword)
                     if keyword is not None:
-                        article.keywords.add(keyword)
+                        publication.keywords.add(keyword)
 
-            for u in article_info.uni_authors:
-                university = self.build_uni(u)
-                if len(university.name) < 350:
-                    university = self.repo.save_university(university)
-                    article.universities.add(university)
-                    for a in article_info.uni_authors[u]:
+            for u in publication_info.org_authors:
+                organization = self.build_org(u)
+                if len(organization.name) < 350:
+                    organization = self.repo.save_organization(organization)
+                    publication.organizations.add(organization)
+                    for a in publication_info.org_authors[u]:
                         author = self.build_author(a)
                         author = self.repo.save_author(author)
-                        author.universities.add(university)
-                        article.authors.add(author)
+                        author.organizations.add(organization)
+                        publication.authors.add(author)
 
-    def build_article(self, article_info):
-        article = Article()
-        article.name = article_info.name
-        article.journal_name = article_info.journal_name
-        article.link = article_info.link
-        article.link_to_btn = article_info.link_to_btn
-        article.abstract = article_info.abstract
-        article.publication_date = article_info.publication_date
-        article.country = article_info.country
-        return article
+    def build_publication(self, publication_info):
+        publication = Publication()
+        publication.name = publication_info.name
+        publication.journal_name = publication_info.journal_name
+        publication.link = publication_info.link
+        publication.link_to_btn = publication_info.link_to_btn
+        publication.abstract = publication_info.abstract
+        publication.date = publication_info.date
+        publication.country = publication_info.country
+        return publication
 
     def build_keyword(self, k):
         keyword = Keyword(name=k)
         return keyword
 
-    def build_uni(self, u):
-        uni = University(name=u.strip())
-        return uni
+    def build_org(self, u):
+        org = Organization(name=u.strip())
+        return org
 
     def build_author(self, a):
         author = Author(name=a)
@@ -61,25 +61,25 @@ class Service:
 
     # ----------------------- organizations
 
-    def get_country_unis_top(self, country):
-        return self.repo.get_country_unis_top(country)
+    def get_country_orgs_top(self, country):
+        return self.repo.get_country_orgs_top(country)
 
-    def get_all_unis_top(self):
-        return self.repo.get_unis_top()
+    def get_all_orgs_top(self):
+        return self.repo.get_all_orgs_top()
 
     def get_limit_organizations(self, country, page):
-        unis = self.repo.get_limit_organizations(country)
-        if len(unis[page*10:]) >= 10:
-            return unis[page*10:page*10+10]
+        orgs = self.repo.get_limit_organizations(country)
+        if len(orgs[page*10:]) >= 10:
+            return orgs[page*10:page*10+10]
         else:
-            return unis[page*10:]
+            return orgs[page*10:]
 
-    def search_unis_by_name(self, search_text, count_from, count_to, country, page):
-        unis = self.repo.search_unis_by_name(search_text, count_from, count_to,  country)
-        if len(unis[page*10:]) >= 10:
-            return unis[page*10:page*10+10]
+    def search_orgs_by_name(self, search_text, count_from, count_to, country, page):
+        orgs = self.repo.search_orgs_by_name(search_text, count_from, count_to, country)
+        if len(orgs[page*10:]) >= 10:
+            return orgs[page*10:page*10+10]
         else:
-            return unis[page*10:]
+            return orgs[page*10:]
 
     # ----------------------- keywords
 
@@ -104,10 +104,14 @@ class Service:
     def get_pub_activity(self):
         activity = []
         for country in ALL_COUNTRIES:
+            print("Activity for ", country, "...")
             count = self.repo.get_country_activity(country)
             contribution = self.repo.get_coutry_contribution(country)
             activity.append({'country': country, 'count': count, 'contribution':  contribution})
         return activity
+
+    def get_countries_collaborations(self):
+        return self.repo.get_countries_collaborations()
 
 
 

@@ -11,7 +11,7 @@ import threading
 import json
 
 from bricsagentapplication.cache.Cache import Cache
-from bricsagentapplication.model.models import Article
+from bricsagentapplication.model.models import Publication
 from django.core import serializers
 
 agent = Agent()
@@ -49,17 +49,17 @@ def filling_progress(request):
 @require_http_methods(["POST"])
 def get_country_top_organizations(request):
     country = json.loads(request.body)['country']
-    if cache.is_unis_empty(country):
+    if cache.is_orgs_empty(country):
         # unis = agent.get_top_unis_names(country)  # с сайта, нужно парсить - долго
-        unis = service.get_country_unis_top(country)  # из БД согласно данным в ней
-        cache.cache_countries_unis_top(unis, country)
-    return JsonResponse(cache.get_unis_top(country), safe=False)
+        unis = service.get_country_orgs_top(country)  # из БД согласно данным в ней
+        cache.cache_countries_orgs_top(unis, country)
+    return JsonResponse(cache.get_orgs_top(country), safe=False)
 
 
 @csrf_exempt
 @require_http_methods(["GET"])
 def get_all_top_organizations(request):
-    return JsonResponse(service.get_all_unis_top(), safe=False)
+    return JsonResponse(service.get_all_orgs_top(), safe=False)
 
 
 @csrf_exempt
@@ -78,7 +78,7 @@ def search_organizations(request):
     country = json.loads(request.body)['country']
     count_from = json.loads(request.body)['count_from']
     count_to = json.loads(request.body)['count_to']
-    unis = service.search_unis_by_name(search_text, count_from, count_to, country, page)
+    unis = service.search_orgs_by_name(search_text, count_from, count_to, country, page)
     return JsonResponse(unis, safe=False)
 
 #  ----------------------------------------------------------- keywords
@@ -130,15 +130,33 @@ def get_pub_activity(request):
     activity = cache.get_pub_activity()
     return JsonResponse(activity, safe=False)
 
+from json import JSONEncoder
+
+def _default(self, obj):
+    return getattr(obj.__class__, "to_json", _default.default)(obj)
+
+_default.default = JSONEncoder().default
+JSONEncoder.default = _default
+
+@csrf_exempt
+@require_http_methods(["GET"])
+def get_countries_collaborations(request):
+    if cache.is_countries_collaborations_empty():
+        collaborations = service.get_countries_collaborations()
+        cache.cache_countries_collaborations(collaborations)
+    collaborations = cache.get_countries_collaborations()
+    # collaborations = service.get_countries_collaborations()
+    return JsonResponse(collaborations, safe=False)
+
 #  ----------------------------------------------------------- articles
 
 
 @csrf_exempt
 @require_http_methods(["POST"])
-def get_all_articles(request):
+def get_all_publications(request):
     min = json.loads(request.body)['min']
     max = json.loads(request.body)['max']
-    articles = Article.objects.all()[min:max+1]
+    articles = Publication.objects.all()[min:max + 1]
     return JsonResponse(json.loads(serializers.serialize('json', articles)), safe=False)
 
 

@@ -5,7 +5,7 @@ from bricsagentapplication.controller import views
 urlpatterns = [
     path('', views.index, name='index'),
 
-    path('articles/all', views.get_all_articles, name='get_all_articles'),
+    path('articles/all', views.get_all_publications, name='get_all_articles'),
     path('activity', views.get_pub_activity, name='get_pub_activity'),
 
     path('country/organizations/top', views.get_country_top_organizations, name='get_top_organizations'),
@@ -19,5 +19,7 @@ urlpatterns = [
     path('statistic/period', views.get_statistic_period, name='get_statistic_period'),
     path('organizations/search', views.search_organizations, name='search_organizations'),
     path('redirect', views.redirect_to, name='redirect_to'),
-    path('progress', views.filling_progress, name='filling_progress')
+    path('progress', views.filling_progress, name='filling_progress'),
+
+    path('countries/collaborations', views.get_countries_collaborations, name='get_countries_collaborations')
 ]

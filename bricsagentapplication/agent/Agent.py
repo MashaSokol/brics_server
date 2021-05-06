@@ -1,6 +1,6 @@
 from Project.classes.CsvWriter import CSVWriter
 from .Parser import Parser
-from bricsagentapplication.model.models import Article, University
+from bricsagentapplication.model.models import Publication, Organization
 from .Service import Service
 from bricsagentapplication.cache.Cache import Cache
 from webdriver_manager.firefox import GeckoDriverManager
@@ -35,25 +35,27 @@ class Agent:
         self.current_link_number = 0
         self.current_country = country
 
-        # links, links_journals = self.parser.get_btns_links_and_journals(coutry)
-        # self.csv_writer.write_links_journals_functions_files(links, links_journals)
+        driver = self.create_driver()
+        self.parser.driver = driver
+
+        links, links_journals = self.parser.get_btns_links_and_journals(country)
+        self.csv_writer.write_links_journals_functions_files(links, links_journals)
 
         links_journals = self.csv_writer.read_links_journals_file(country)
         self.links_count = len(links_journals)
 
-        driver = self.create_driver()
-        self.parser.driver = driver
         for link_to_button in links_journals:
             self.current_link_number += 1
             print(country + ", link: ", link_to_button)
             try:
-                Article.objects.get(link_to_btn=link_to_button)
-            except Article.DoesNotExist:
+                Publication.objects.get(link_to_btn=link_to_button)
+            except Publication.DoesNotExist:
                 try:
                     journal_name = links_journals[link_to_button]
-                    article_info = self.parser.get_article_information(link_to_button, journal_name, country)
-                    if article_info is not None:
-                        self.service.save_article_info(article_info)
+                    publication_info = self.parser.get_publication_information(link_to_button, journal_name)
+                    if publication_info is not None:
+                        publication_info.country = country
+                        self.service.save_publication_info(publication_info)
                 except KeyError:
                     my_file = open("exceptions.txt", "a")
                     my_file.write('\n we do not know journal of ' + link_to_button + " is\n ")
@@ -161,7 +163,7 @@ class Agent:
             progress = 0
         return {"country": self.current_country, "progress": progress, "in_progress": self.in_progress}
 
-    def update_cache(self, parser):
+    # def update_cache(self, parser):
         # todo заменить
-        for country in ['Brazil', 'Russia', 'India', 'China', 'South Africa']:
-            self.cache.cache_countries_unis_top(parser.get_country_top_unis_names(country), country)
+        # for country in ['Brazil', 'Russia', 'India', 'China', 'South Africa']:
+        #     self.cache.cache_countries_orgs_top(parser.get_country_top_unis_names(country), country)
