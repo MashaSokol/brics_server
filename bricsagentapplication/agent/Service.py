@@ -2,6 +2,7 @@ from Project.resources.consts import ALL_COUNTRIES
 from .Repo import Repo
 
 from bricsagentapplication.model.models import Keyword, Organization, Author, Publication
+from ..model.Collaborations import Collaborations
 
 
 class Service:
@@ -61,38 +62,41 @@ class Service:
 
     # ----------------------- organizations
 
-    def get_country_orgs_top(self, country):
-        return self.repo.get_country_orgs_top(country)
+    def get_country_organizations_top(self, country):
+        return self.repo.get_country_organizations_with_pub_count(country)[:10]
 
-    def get_all_orgs_top(self):
-        return self.repo.get_all_orgs_top()
+    def get_all_organizations_top(self):
+        return self.repo.get_all_organizations_with_pub_count()[:10]
 
-    def get_limit_organizations(self, country, page):
-        orgs = self.repo.get_limit_organizations(country)
+    def get_limit_organizations_with_pub_count(self, country, page):
+        orgs = self.repo.get_country_organizations_with_pub_count(country)
         if len(orgs[page*10:]) >= 10:
             return orgs[page*10:page*10+10]
         else:
             return orgs[page*10:]
 
-    def search_orgs_by_name(self, search_text, count_from, count_to, country, page):
-        orgs = self.repo.search_orgs_by_name(search_text, count_from, count_to, country)
+    def search_orgs_with_pub_count(self, search_text, count_from, count_to, country, page):
+        orgs = self.repo.search_orgs_with_pub_count(search_text, count_from, count_to, country)
         if len(orgs[page*10:]) >= 10:
             return orgs[page*10:page*10+10]
         else:
             return orgs[page*10:]
 
+    def get_organization_publications_count(self, organization_id):
+        return {'organization_id': organization_id, 'count': self.repo.get_organization_publications_count(organization_id)[0]['count']}
     # ----------------------- keywords
 
-    def get_country_top_keywords_names(self, country):
-        return self.repo.get_country_keywords_top(country)
+    def get_country_keywords_top(self, country):
+        return self.repo.get_country_keywords_with_pub_count(country)[:10]
 
     def get_all_keywords_top(self):
-        return self.repo.get_keywords_top()
+        return self.repo.get_all_keywords_with_pub_count()[:10]
 
     # ----------------------- authors
 
     def get_organization_authors_top(self, organization_id):
-        return self.repo.get_organization_authors_top(organization_id)
+        authors = self.repo.get_organization_authors_with_pub_count(organization_id)[:10]
+        return {'organization_name': Organization.objects.get(id=organization_id).name, 'authors_top': authors}
 
     # ----------------------- statistic
 
@@ -102,16 +106,42 @@ class Service:
         return {'min_date': min_date, 'max_date': max_date}
 
     def get_pub_activity(self):
-        activity = []
+        publications = self.repo.get_all_publications()
+        activity = {c: 0 for c in ALL_COUNTRIES}
+        contribution = {c: 0 for c in ALL_COUNTRIES}
+        publications_count = 0
+        for a in publications:
+            orgs = self.repo.get_pub_organizations(a)
+            if len(orgs) > 0:
+                for c in ALL_COUNTRIES:
+                    country_publication_orgs_count = len(self.repo.filter_orgs_by_country(orgs, c))
+                    if country_publication_orgs_count > 0:
+                        activity[c] += 1
+                        contribution[c] += country_publication_orgs_count * 100 / len(orgs)
+                publications_count += 1
+        for c in contribution:
+            contribution[c] = contribution[c] / activity[c]
+        result_activity = []
         for country in ALL_COUNTRIES:
-            print("Activity for ", country, "...")
-            count = self.repo.get_country_activity(country)
-            contribution = self.repo.get_coutry_contribution(country)
-            activity.append({'country': country, 'count': count, 'contribution':  contribution})
-        return activity
+            result_activity.append({'country': country, 'count': activity[country], 'contribution':  contribution[country]})
+        return result_activity
 
     def get_countries_collaborations(self):
-        return self.repo.get_countries_collaborations()
+        all_collaborations = Collaborations()
+        # todo убрать 500
+        all_publications = self.repo.get_all_publications()[0: 500]
+        for a in all_publications:
+            print(" ----- ", a.name)
+            orgs = []
+            for country in ALL_COUNTRIES:
+                all_orgs = a.organizations.all()
+                orgs.append(len(self.repo.filter_orgs_by_country(all_orgs, country)))
+            for i in range(0, len(orgs)):
+                if orgs[i]:
+                    for j in range(i + 1, len(orgs)):
+                        if orgs[j]:
+                            all_collaborations.add_collab(ALL_COUNTRIES[i], ALL_COUNTRIES[j], a.keywords.all())
+        return all_collaborations.collaborations
 
 
 
