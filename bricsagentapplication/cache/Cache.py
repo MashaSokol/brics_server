@@ -1,8 +1,10 @@
 class Cache:
 
     def __init__(self):
-        self.top_countries_organizations = {}
-        self.top_keywords = {}
+        self.countries_organizations_top = {}
+        self.all_organizations_top = []
+        self.countries_keywords_top = {}
+        self.all_keywords_top = []
         self.statistic_period = {}
         self.pub_activity = []
         self.countries_collaborations = []
@@ -12,37 +14,65 @@ class Cache:
             cls.instance = super(Cache, cls).__new__(cls)
         return cls.instance
 
-    # ----------------------- unis
+    # ----------------------- countries orgs
 
     def cache_countries_orgs_top(self, orgs, country):
-        self.top_countries_organizations[country] = []
+        self.countries_organizations_top[country] = []
         for u in orgs:
-            self.top_countries_organizations[country].append(u)
+            self.countries_organizations_top[country].append(u)
 
-    def is_orgs_empty(self, country):
+    def is_country_orgs_top_empty(self, country):
         try:
-            return len(self.top_countries_organizations[country]) == 0
+            return len(self.countries_organizations_top[country]) == 0
         except KeyError:
             return True
 
-    def get_orgs_top(self, country):
-        return self.top_countries_organizations[country]
+    def get_country_orgs_top(self, country):
+        return self.countries_organizations_top[country]
 
-    # ----------------------- keywords
+    # ----------------------- all orgs
+
+    def cache_all_orgs_top(self, orgs):
+        self.all_organizations_top = []
+        for u in orgs:
+            self.all_organizations_top.append(u)
+
+    def is_all_orgs_top_empty(self):
+        return len(self.all_organizations_top) == 0
+
+
+    def get_all_orgs_top(self):
+        return self.all_organizations_top
+
+    # ----------------------- countries keywords
 
     def cache_keywords_top(self, keywords, country):
-        self.top_keywords[country] = []
+        self.countries_keywords_top[country] = []
         for k in keywords:
-            self.top_keywords[country].append(k)
+            self.countries_keywords_top[country].append(k)
 
     def is_keywords_empty(self, country):
         try:
-            return len(self.top_keywords[country]) == 0
+            return len(self.countries_keywords_top[country]) == 0
         except KeyError:
             return True
 
     def get_keywords_top(self, country):
-        return self.top_keywords[country]
+        return self.countries_keywords_top[country]
+
+    # ----------------------- all keywords
+
+    def cache_all_keywords_top(self, orgs):
+        self.all_keywords_top = []
+        for u in orgs:
+            self.all_keywords_top.append(u)
+
+    def is_all_keywords_top_empty(self):
+        return len(self.all_keywords_top) == 0
+
+
+    def get_all_keywords_top(self):
+        return self.all_keywords_top
 
     # ----------------------- statistic
 
