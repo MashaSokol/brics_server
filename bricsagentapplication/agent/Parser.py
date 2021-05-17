@@ -20,10 +20,6 @@ class Parser:
             cls.instance = super(Parser, cls).__new__(cls)
         return cls.instance
 
-    def close_driver(self):
-        self.driver.quit()
-
-
     @private
     def try_finding_element_by(self, ways_params_dict):
         for way in ways_params_dict:
