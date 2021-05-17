@@ -89,59 +89,91 @@ class Repo:
         return Publication.objects.order_by('date')[0].date
 
     def get_max_pub_date(self):
-        return Publication.objects.order_by('-publication_date')[0].date
+        return Publication.objects.order_by('-date')[0].date
 
-    def get_country_activity(self, country):
-        publications = Publication.objects.all()
-        publications_count = 0
-        for a in publications:
-            all_orgs = a.organizations.all()
-            orgs_there = len(all_orgs.filter(name__icontains=country)) > 0 if country.lower() == 'russia' else len(all_orgs.filter(name__iendswith=country)) > 0
-            if orgs_there:
-                publications_count += 1
-        return publications_count
-        # return len(Article.objects.filter(country__iexact=country))
+    def get_all_publications(self):
+        return Publication.objects.all()
 
-    def get_countries_collaborations(self):
-        all_collaborations = Collaborations()
-        all_publications = Publication.objects.all()[0:500]
-        for a in all_publications:
-            print(" ----- ", a.name)
-            orgs = []
-            for country in ALL_COUNTRIES:
-                all_orgs = a.organizations.all()
-                orgs.append(len(all_orgs.filter(name__icontains=country)) > 0) if country.lower() == 'russia' else orgs.append(len(all_orgs.filter(name__iendswith=country)) > 0)
-            for i in range(0, len(orgs)):
-                if orgs[i]:
-                    for j in range(i + 1, len(orgs)):
-                        if orgs[j]:
-                            all_collaborations.add_collab(ALL_COUNTRIES[i], ALL_COUNTRIES[j], a.keywords.all())
-        return all_collaborations.collaborations
+    def get_pub_organizations(self, publication):
+        return publication.organizations.all()
 
-    def get_coutry_contribution(self, country):
-        # articles = Article.objects.filter(country__icontains=country)
-        publications = Publication.objects.all()
-        contribution = 0
-        publications_count = 0
-        for a in publications:
-            orgs_count = len(a.organizations.all())
-            if orgs_count > 0:
-                orgs = a.organizations.all()
-                country_publication_orgs_count = len(orgs.filter(name__icontains=country)) > 0 if country.lower() == 'russia' else len(orgs.filter(name__iendswith=country)) > 0
-                if country_publication_orgs_count:
-                    publications_count += 1
-                    contribution += country_publication_orgs_count * 100 / orgs_count
-        return contribution / publications_count
+    def get_organization_publications_count(self, organization_id):
+
+        query = f"select count(organization_id) " \
+                f"from bricsagentapplication_publication_organizations " \
+                f"where organization_id={organization_id}"
+
+        cursor = connection.cursor()
+        cursor.execute(query)
+        row = dict_fetch_all(cursor)
+        print(";;;;;;;;;;;;;;;;;;;;;;;;", row)
+        return row
+
+    def filter_orgs_by_country(self, orgs, country):
+        return orgs.filter(name__icontains=country) if country.lower() == 'russia' else orgs.filter(name__iendswith=country)
+    # # todo создать класс countryActivity
+    # def get_countries_activity(self):
+    #     publications = Publication.objects.all()
+    #
+    #     activity = {c: 0 for c in ALL_COUNTRIES}
+    #     contribution = {c: 0 for c in ALL_COUNTRIES}
+    #     publications_count = 0
+    #
+    #     for a in publications:
+    #         orgs = a.organizations.all()
+    #         if len(orgs) > 0:
+    #             for c in ALL_COUNTRIES:
+    #                 country_publication_orgs_count = len(orgs.filter(name__icontains=c)) if c.lower() == 'russia' else len(orgs.filter(name__iendswith=c))
+    #                 if country_publication_orgs_count > 0:
+    #                     activity[c] += 1
+    #                     contribution[c] += country_publication_orgs_count * 100 / len(orgs)
+    #             publications_count += 1
+    #     for c in contribution:
+    #         contribution[c] = contribution[c] / activity[c]
+    # #     return activity, contribution
+    #
+    # def get_coutry_contribution(self, country):
+    #     # articles = Article.objects.filter(country__icontains=country)
+    #     publications = Publication.objects.all()
+    #     contribution = 0
+    #     publications_count = 0
+    #     for a in publications:
+    #         orgs = a.organizations.all()
+    #         if len(orgs) > 0:
+    #             country_publication_orgs_count = len(orgs.filter(name__icontains=country)) if country.lower() == 'russia' else len(orgs.filter(name__iendswith=country))
+    #             if country_publication_orgs_count > 0:
+    #                 publications_count += 1
+    #                 contribution += country_publication_orgs_count * 100 / len(orgs)
+    #     return contribution / publications_count
+
+    # def get_countries_collaborations(self):
+    #     all_collaborations = Collaborations()
+    #
+    #     # todo убрать 500
+    #     all_publications = Publication.objects.all()[0:500]
+    #     for a in all_publications:
+    #         print(" ----- ", a.name)
+    #         orgs = []
+    #         for country in ALL_COUNTRIES:
+    #             all_orgs = a.organizations.all()
+    #             orgs.append(len(all_orgs.filter(name__icontains=country)) > 0) if country.lower() == 'russia' else orgs.append(len(all_orgs.filter(name__iendswith=country)) > 0)
+    #         for i in range(0, len(orgs)):
+    #             if orgs[i]:
+    #                 for j in range(i + 1, len(orgs)):
+    #                     if orgs[j]:
+    #                         all_collaborations.add_collab(ALL_COUNTRIES[i], ALL_COUNTRIES[j], a.keywords.all())
+    #     return all_collaborations.collaborations
+
+
 
     # ----------------------- unis
 
-    def search_orgs_by_name(self, search_text, count_from, count_to, country):
+    def search_orgs_with_pub_count(self, search_text, count_from, count_to, country):
         if country.lower() != 'russia':
             country = '%' + country
         else:
             country = '%' + country + '%'
         if count_from == 0 and count_to == 0:
-            # return University.objects.filter(name__icontains=country).filter(name__icontains=search_text).filter()
             query = "select organization_id, u.name, count(organization_id) as count " \
                     "from bricsagentapplication_publication_organizations au, bricsagentapplication_organization u " \
                     f"where au.organization_id = u.id and name ilike '{country}' and name ilike '%{search_text}%' " \
@@ -157,32 +189,44 @@ class Repo:
         row = dict_fetch_all(cursor)
         return row
 
-    def get_country_orgs_top(self, country):
-        if country.lower() != 'russia':
-            country = '%' + country
-        else:
-            country = '%' + country + '%'
-        cursor = connection.cursor()
-        query = "select organization_id, u.name, count(organization_id) " \
-                "from bricsagentapplication_publication_organizations au, bricsagentapplication_organization u " \
-                f"where au.organization_id = u.id and name ilike '{country}' " \
-                "group by organization_id, u.name order by  count(organization_id) DESC LIMIT 10"
-        cursor.execute(query)
-        row = dict_fetch_all(cursor)
-        return row
 
-    def get_all_orgs_top(self):
+    # def get_country_orgs_top(self, country):
+    #     if country.lower() != 'russia':
+    #         country = '%' + country
+    #     else:
+    #         country = '%' + country + '%'
+    #     cursor = connection.cursor()
+    #     query = "select organization_id, u.name, count(organization_id) " \
+    #             "from bricsagentapplication_publication_organizations au, bricsagentapplication_organization u " \
+    #             f"where au.organization_id = u.id and name ilike '{country}' " \
+    #             "group by organization_id, u.name order by  count(organization_id) DESC LIMIT 10"
+    #     cursor.execute(query)
+    #     row = dict_fetch_all(cursor)
+    #     return row
+
+    def get_all_organizations_with_pub_count(self):
         cursor = connection.cursor()
         query = "select organization_id, u.name, count(organization_id) " \
                 "from bricsagentapplication_publication_organizations au, bricsagentapplication_organization u " \
                 f"where au.organization_id = u.id " \
                 "and (u.name ilike '%china' or u.name ilike '%south africa' or u.name ilike '%brazil' or u.name ilike '%india' or u.name ilike '%russia%' )" \
-                "group by organization_id, u.name order by  count(organization_id) DESC LIMIT 10"
+                "group by organization_id, u.name order by  count(organization_id) DESC"
         cursor.execute(query)
         row = dict_fetch_all(cursor)
         return row
 
-    def get_limit_organizations(self, country):
+    # def get_all_orgs_top(self):
+    #     cursor = connection.cursor()
+    #     query = "select organization_id, u.name, count(organization_id) " \
+    #             "from bricsagentapplication_publication_organizations au, bricsagentapplication_organization u " \
+    #             f"where au.organization_id = u.id " \
+    #             "and (u.name ilike '%china' or u.name ilike '%south africa' or u.name ilike '%brazil' or u.name ilike '%india' or u.name ilike '%russia%' )" \
+    #             "group by organization_id, u.name order by  count(organization_id) DESC LIMIT 10"
+    #     cursor.execute(query)
+    #     row = dict_fetch_all(cursor)
+    #     return row
+
+    def get_country_organizations_with_pub_count(self, country):
         if country.lower() != 'russia':
             country = '%' + country
         else:
@@ -196,9 +240,10 @@ class Repo:
         row = dict_fetch_all(cursor)
         return row
 
+
     # ----------------------- keywords
 
-    def get_country_keywords_top(self, country):
+    def get_country_keywords_with_pub_count(self, country):
         if country.lower() != 'russia':
             country = '%' + country
         else:
@@ -208,13 +253,27 @@ class Repo:
                 f"from bricsagentapplication_publication_keywords ak, bricsagentapplication_publication a, bricsagentapplication_keyword k " \
                 f"where ak.publication_id=a.id  and a.country ilike '{country}' and ak.keyword_id=k.id " \
                 f"group by 1 " \
-                f"order by count(keyword_id) DESC, k.name " \
-                f"LIMIT 10 ;"
+                f"order by count(keyword_id) DESC, k.name "
         cursor.execute(query)
         row = dict_fetch_all(cursor)
         return row
+    # def get_country_keywords_top(self, country):
+    #     if country.lower() != 'russia':
+    #         country = '%' + country
+    #     else:
+    #         country = '%' + country + '%'
+    #     cursor = connection.cursor()
+    #     query = f"select k.id, k.name, count(keyword_id) " \
+    #             f"from bricsagentapplication_publication_keywords ak, bricsagentapplication_publication a, bricsagentapplication_keyword k " \
+    #             f"where ak.publication_id=a.id  and a.country ilike '{country}' and ak.keyword_id=k.id " \
+    #             f"group by 1 " \
+    #             f"order by count(keyword_id) DESC, k.name " \
+    #             f"LIMIT 10 ;"
+    #     cursor.execute(query)
+    #     row = dict_fetch_all(cursor)
+    #     return row
 
-    def get_keywords_top(self):
+    def get_all_keywords_with_pub_count(self):
         cursor = connection.cursor()
         query = f"select k.id, k.name, count(keyword_id) " \
                 f"from bricsagentapplication_publication_keywords ak, bricsagentapplication_publication a, bricsagentapplication_keyword k " \
@@ -225,10 +284,20 @@ class Repo:
         cursor.execute(query)
         row = dict_fetch_all(cursor)
         return row
+    # def get_all_keywords_top(self):
+    #     cursor = connection.cursor()
+    #     query = f"select k.id, k.name, count(keyword_id) " \
+    #             f"from bricsagentapplication_publication_keywords ak, bricsagentapplication_publication a, bricsagentapplication_keyword k " \
+    #             f"where ak.publication_id=a.id and ak.keyword_id=k.id " \
+    #             f"group by 1 " \
+    #             f"order by count(keyword_id) DESC, k.name " \
+    #             f"LIMIT 10 ;"
+    #     cursor.execute(query)
+    #     row = dict_fetch_all(cursor)
+    #     return row
 
     # ----------------------- authors
-
-    def get_organization_authors_top(self, organization_id):
+    def get_organization_authors_with_pub_count(self, organization_id):
         cursor = connection.cursor()
         query = f"select auth.id, auth.name, count(aa.author_id) " \
                 f"from bricsagentapplication_publication_authors aa, " \
@@ -241,5 +310,18 @@ class Repo:
                 f"LIMIT 10;"
         cursor.execute(query)
         row = dict_fetch_all(cursor)
-        answer = {'organization_name': Organization.objects.get(id=organization_id).name, 'authors_top': row}
-        return answer
+        return row
+    # def get_organization_authors_top(self, organization_id):
+    #     cursor = connection.cursor()
+    #     query = f"select auth.id, auth.name, count(aa.author_id) " \
+    #             f"from bricsagentapplication_publication_authors aa, " \
+    #             f"bricsagentapplication_publication art, " \
+    #             f"bricsagentapplication_author auth, " \
+    #             f"bricsagentapplication_author_organizations au " \
+    #             f"where aa.publication_id=art.id and aa.author_id=auth.id and au.author_id=auth.id and au.organization_id = {organization_id} " \
+    #             f"group by 1, 2 " \
+    #             f"order by count(aa.author_id) DESC, auth.name " \
+    #             f"LIMIT 10;"
+    #     cursor.execute(query)
+    #     row = dict_fetch_all(cursor)
+    #     return row
