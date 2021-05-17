@@ -22,7 +22,7 @@ cache = Cache()
 #  -----------------------------------------------------------  parsing
 @csrf_exempt
 @require_http_methods(["POST"])
-def index(request):
+def start(request):
     if not request.user.is_superuser:
         request.session['previous_link'] = request.META.get('HTTP_REFERER')
         return HttpResponse(status=401)
@@ -47,19 +47,23 @@ def filling_progress(request):
 
 @csrf_exempt
 @require_http_methods(["POST"])
-def get_country_top_organizations(request):
+def get_country_organizations_top(request):
     country = json.loads(request.body)['country']
-    if cache.is_orgs_empty(country):
+    if cache.is_country_orgs_top_empty(country):
         # unis = agent.get_top_unis_names(country)  # с сайта, нужно парсить - долго
-        unis = service.get_country_orgs_top(country)  # из БД согласно данным в ней
+        unis = service.get_country_organizations_top(country)  # из БД согласно данным в ней
         cache.cache_countries_orgs_top(unis, country)
-    return JsonResponse(cache.get_orgs_top(country), safe=False)
+    return JsonResponse(cache.get_country_orgs_top(country), safe=False)
 
 
 @csrf_exempt
 @require_http_methods(["GET"])
-def get_all_top_organizations(request):
-    return JsonResponse(service.get_all_orgs_top(), safe=False)
+def get_all_organizations_top(request):
+    if cache.is_all_orgs_top_empty():
+        # unis = agent.get_top_unis_names(country)  # с сайта, нужно парсить - долго
+        unis = service.get_all_organizations_top()  # из БД согласно данным в ней
+        cache.cache_all_orgs_top(unis)
+    return JsonResponse(cache.get_all_orgs_top(), safe=False)
 
 
 @csrf_exempt
@@ -67,7 +71,7 @@ def get_all_top_organizations(request):
 def get_limit_organizations(request):
     country = json.loads(request.body)['country']
     page = json.loads(request.body)['page'] - 1
-    return JsonResponse(service.get_limit_organizations(country, page), safe=False)
+    return JsonResponse(service.get_limit_organizations_with_pub_count(country, page), safe=False)
 
 
 @csrf_exempt
@@ -78,26 +82,35 @@ def search_organizations(request):
     country = json.loads(request.body)['country']
     count_from = json.loads(request.body)['count_from']
     count_to = json.loads(request.body)['count_to']
-    unis = service.search_orgs_by_name(search_text, count_from, count_to, country, page)
+    unis = service.search_orgs_with_pub_count(search_text, count_from, count_to, country, page)
     return JsonResponse(unis, safe=False)
+
+@csrf_exempt
+@require_http_methods(["POST"])
+def get_organization_publications_count(request):
+    organization_id = json.loads(request.body)['organization_id']
+    return JsonResponse(service.get_organization_publications_count(organization_id), safe=False)
 
 #  ----------------------------------------------------------- keywords
 
 
 @csrf_exempt
 @require_http_methods(["POST"])
-def get_country_top_keywords(request):
+def get_country_keywords_top(request):
     country = json.loads(request.body)['country']
     if cache.is_keywords_empty(country):
-        kwds = service.get_country_top_keywords_names(country)  # из БД согласно данным в ней
+        kwds = service.get_country_keywords_top(country)  # из БД согласно данным в ней
         cache.cache_keywords_top(kwds, country)
     return JsonResponse(cache.get_keywords_top(country), safe=False)
 
 
 @csrf_exempt
 @require_http_methods(["GET"])
-def get_all_top_keywords(request):
-    return JsonResponse(service.get_all_keywords_top(), safe=False)
+def get_all_keywords_top(request):
+    if cache.is_all_keywords_top_empty():
+        keywords = service.get_all_keywords_top()
+        cache.cache_all_keywords_top(keywords)
+    return JsonResponse(cache.get_all_keywords_top(), safe=False)
 
 #  ----------------------------------------------------------- authors
 
@@ -158,5 +171,3 @@ def get_all_publications(request):
     max = json.loads(request.body)['max']
     articles = Publication.objects.all()[min:max + 1]
     return JsonResponse(json.loads(serializers.serialize('json', articles)), safe=False)
-
-
